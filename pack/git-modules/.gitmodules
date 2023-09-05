@@ -1,0 +1,6 @@
+[submodule "start/vim-surround"]
+	path = start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "start/lightline.vim"]
+	path = start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
