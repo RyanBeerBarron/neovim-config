@@ -16,3 +16,9 @@
 [submodule "start/tokyonight.nvim"]
 	path = start/tokyonight.nvim
 	url = https://github.com/folke/tokyonight
+[submodule "start/nvim-jdtls"]
+	path = start/nvim-jdtls
+	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "start/nvim-lspconfig"]
+	path = start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
