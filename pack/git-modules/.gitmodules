@@ -7,3 +7,12 @@
 [submodule "start/lualine.nvim"]
 	path = start/lualine.nvim
 	url = https://github.com/lualine/lualine
+[submodule "start/darcula"]
+	path = start/darcula
+	url = https://github.com/doums/darcula
+[submodule "start/kanagawa.nvim"]
+	path = start/kanagawa.nvim
+	url = https://github.com/rebelot/kanagawa
+[submodule "start/tokyonight.nvim"]
+	path = start/tokyonight.nvim
+	url = https://github.com/folke/tokyonight
