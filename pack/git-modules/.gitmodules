@@ -22,3 +22,12 @@
 [submodule "start/nvim-lspconfig"]
 	path = start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule "start/nvim-treesitter"]
+	path = start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "start/nvim-treesitter-context"]
+	path = start/nvim-treesitter-context
+	url = https://github.com/nvim-treesitter/nvim-treesitter-context
+[submodule "start/nvim-treesitter-textobjects"]
+	path = start/nvim-treesitter-textobjects
+	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
