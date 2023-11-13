@@ -4,3 +4,6 @@
 [submodule "start/lightline.vim"]
 	path = start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+[submodule "start/lualine.nvim"]
+	path = start/lualine.nvim
+	url = https://github.com/lualine/lualine
