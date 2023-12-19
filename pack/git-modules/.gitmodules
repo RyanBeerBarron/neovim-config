@@ -6,16 +6,16 @@
 	url = https://github.com/itchyny/lightline.vim
 [submodule "start/lualine.nvim"]
 	path = start/lualine.nvim
-	url = https://github.com/lualine/lualine
+	url = https://github.com/nvim-lualine/lualine.nvim
 [submodule "start/darcula"]
 	path = start/darcula
 	url = https://github.com/doums/darcula
 [submodule "start/kanagawa.nvim"]
 	path = start/kanagawa.nvim
-	url = https://github.com/rebelot/kanagawa
+	url = https://github.com/rebelot/kanagawa.nvim
 [submodule "start/tokyonight.nvim"]
 	path = start/tokyonight.nvim
-	url = https://github.com/folke/tokyonight
+	url = https://github.com/folke/tokyonight.nvim
 [submodule "start/nvim-jdtls"]
 	path = start/nvim-jdtls
 	url = https://github.com/mfussenegger/nvim-jdtls
