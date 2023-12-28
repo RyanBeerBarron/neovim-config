@@ -31,3 +31,9 @@
 [submodule "start/nvim-treesitter-textobjects"]
 	path = start/nvim-treesitter-textobjects
 	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[submodule "start/gruvbox"]
+	path = start/gruvbox
+	url = https://github.com/ellisonleao/gruvbox.nvim
+[submodule "start/papercolor"]
+	path = start/papercolor
+	url = https://github.com/NLKNguyen/papercolor-theme
