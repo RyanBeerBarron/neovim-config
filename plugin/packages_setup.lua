@@ -9,8 +9,42 @@ require('tabline').setup({
     show_index = false,
     show_icon = true,
 })
+-- When inside a tui, we want a transparent background
+-- and let alacritty/tmux set the background color for us
+-- that way, if the tmux window containing vim is inactive,
+-- the color will change accordingly
+--
+-- For the gui, there's only vim who can set the background color
+-- therefore, in that situation, keep the default
+-- by setting the override value to nil
+local tui_normalhi = nil
+if vim.fn.has("gui_running") == 0 then
+    tui_normalhi = { bg = "none" }
+    -- vim.g.PaperColor_Theme_Options
+end
+
 require('kanagawa').setup({
     undercurl = false,
+    dimInactive = true,
+    colors = {
+        theme = {
+            wave = {
+                ui = {
+                    bg_dim = "#0a0a0c"
+                }
+            },
+            lotus = {
+                ui = {
+                    bg_dim = "#7a765b"
+                }
+            }
+        }
+    },
+    overrides = function()
+        return {
+            Normal = tui_normalhi
+        }
+    end,
 })
 require'marks'.setup {
   -- whether to map keybinds or not. default true
@@ -102,3 +136,12 @@ require 'nvim-treesitter.configs'.setup {
         },
     },
 }
+
+require('gruvbox').setup({
+    dimInactive = true,
+    overrides = {
+        NormalNC = { bg = "#0c0c0c" }
+    }
+})
+
+vim.cmd("colo kanagawa")
