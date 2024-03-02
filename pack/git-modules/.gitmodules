@@ -55,3 +55,12 @@
 [submodule "start/marks.nvim"]
 	path = start/marks.nvim
 	url = https://github.com/chentoast/marks.nvim.git
+[submodule "start/vim-abolish"]
+	path = start/vim-abolish
+	url = https://github.com/tpope/vim-abolish/
+[submodule "start/trouble.nvim"]
+	path = start/trouble.nvim
+	url = https://github.com/folke/trouble.nvim.git
+[submodule "start/nvim-web-devicons"]
+	path = start/nvim-web-devicons
+	url = https://github.com/nvim-tree/nvim-web-devicons.git
