@@ -40,9 +40,6 @@
 [submodule "start/tabular"]
 	path = start/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "start/vim-eunuch"]
-	path = start/vim-eunuch
-	url = https://github.com/tpope/vim-eunuch.git
 [submodule "start/vim-commentary"]
 	path = start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
@@ -64,3 +61,9 @@
 [submodule "start/nvim-web-devicons"]
 	path = start/nvim-web-devicons
 	url = https://github.com/nvim-tree/nvim-web-devicons.git
+[submodule "start/telescope.nvim"]
+	path = start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "start/plenary.nvim"]
+	path = start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
