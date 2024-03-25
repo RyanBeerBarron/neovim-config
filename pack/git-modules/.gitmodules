@@ -67,3 +67,9 @@
 [submodule "start/plenary.nvim"]
 	path = start/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "start/nvim-tabline"]
+	path = start/nvim-tabline
+	url = https://github.com/seblj/nvim-tabline
+[submodule "start/firenvim.git"]
+	path = start/firenvim
+	url = https://github.com/glacambre/firenvim.git
