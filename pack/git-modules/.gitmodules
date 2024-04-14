@@ -73,3 +73,36 @@
 [submodule "start/firenvim.git"]
 	path = start/firenvim
 	url = https://github.com/glacambre/firenvim.git
+[submodule "start/catppuccin"]
+	path = start/catppuccin
+	url = https://github.com/catppuccin/nvim.git
+[submodule "start/flexoki"]
+	path = start/flexoki
+	url = https://github.com/kepano/flexoki
+[submodule "start/github-theme.nvim"]
+	path = start/github-theme.nvim
+	url = https://github.com/projekt0n/github-nvim-theme.git
+[submodule "start/lush.nvim"]
+	path = start/lush.nvim
+	url = https://github.com/rktjmp/lush.nvim
+[submodule "start/nordic.nvim"]
+	path = start/nordic.nvim
+	url = https://github.com/AlexvZyl/nordic.nvim
+[submodule "start/nyoom.nvim"]
+	path = start/nyoom.nvim
+	url = https://github.com/nyoom-engineering/nyoom.nvim
+[submodule "start/onenord.nvim"]
+	path = start/onenord.nvim
+	url = https://github.com/rmehri01/onenord.nvim
+[submodule "start/tender.vim"]
+	path = start/tender.vim
+	url = https://github.com/jacoborus/tender.vim
+[submodule "start/vim-monokai-tasty"]
+	path = start/vim-monokai-tasty
+	url = https://github.com/patstockwell/vim-monokai-tasty
+[submodule "start/vim-moonfly-colors"]
+	path = start/vim-moonfly-colors
+	url = https://github.com/bluz71/vim-moonfly-colors
+[submodule "start/zenbones.nvim"]
+	path = start/zenbones.nvim
+	url = https://github.com/mcchrish/zenbones.nvim
