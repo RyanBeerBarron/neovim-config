@@ -106,3 +106,24 @@
 [submodule "start/zenbones.nvim"]
 	path = start/zenbones.nvim
 	url = https://github.com/mcchrish/zenbones.nvim
+[submodule "start/nvim-cmp"]
+	path = start/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+[submodule "start/cmp-cmdline"]
+	path = start/cmp-cmdline
+	url = https://github.com/hrsh7th/cmp-cmdline.git
+[submodule "start/cmp-nvim-lsp"]
+	path = start/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+[submodule "cmp-buffer"]
+	path = start/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer.git
+[submodule "start/cmp-nvim-lua"]
+	path = start/cmp-nvim-lua
+	url = https://github.com/hrsh7th/cmp-nvim-lua.git
+[submodule "start/vim-vsnip"]
+	path = start/vim-vsnip
+	url = https://github.com/hrsh7th/vim-vsnip.git
+[submodule "start/cmp-path"]
+	path = start/cmp-path
+	url = https://github.com/hrsh7th/cmp-path.git
