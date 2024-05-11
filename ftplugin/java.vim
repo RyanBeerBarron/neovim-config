@@ -13,14 +13,30 @@ setlocal wildignore+=*/target/*
 setlocal colorcolumn=100
 setlocal foldmethod=expr
 setlocal foldexpr=s:foldJava(v\:lnum)
+setlocal foldtext=s:foldText()
 setlocal foldlevel=2
 
 function s:foldJava(lnum)
     let line = getline(a:lnum)
+    let foldlevel = FoldMarkers(line)
+    if foldlevel > 0
+        return foldlevel
+    endif
     if line =~ '^import'
         return 3
     endif
     return nvim_treesitter#foldexpr()
+endfunction
+
+function s:foldText()
+    let linenr = v:foldstart
+    let line = getline(linenr)->trim()
+    while line !~? '{{{$' && (line[0] == '@' || line[0:1] == '/*')
+        let linenr += 1
+        let line = getline(linenr)->trim()
+    endwhile
+    let line = line->substitute('{{{$', '', '')->substitute('^-\+ *', '', '')
+    return FoldText(line, linenr, v:foldend, v:folddashes)
 endfunction
 
 nnoremap <buffer> <A-m> <cmd>ExecBuild<cr>

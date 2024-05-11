@@ -45,7 +45,7 @@ set wildoptions=fuzzy,pum,tagfile
 let g:netrw_banner=0
 let g:netrw_liststyle=0
 
-autocmd FileType lua,bash,sh,c,vim,json,go setlocal foldexpr=nvim_treesitter#foldexpr()
+autocmd FileType bash,sh,c,json,go setlocal foldexpr=nvim_treesitter#foldexpr()
 autocmd BufReadPost *.bak execute "doautocmd BufReadPost " .. expand("<afile>:r")
 
 " Global variables

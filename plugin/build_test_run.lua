@@ -1,3 +1,4 @@
+-- Define and instantiante the cmd struct {{{
 ---@class cmd
 ---@field jobid integer?
 ---@field winnr integer
@@ -20,19 +21,17 @@ end
 
 ---@type cmd
 local build = new_cmd("Build")
-
 ---@type cmd
 local test = new_cmd("Test")
-
 ---@type cmd
 local run = new_cmd("Run")
-
 ---@type cmd[]
 local cmds = {
     build,
     test,
     run
 }
+-- }}}
 
 ---@type fun(nil): integer
 local function create_win()
@@ -106,6 +105,7 @@ local function close_wins()
 end
 vim.keymap.set("n", "<leader>cl", close_wins)
 
+-- Setting up commands and keymaps {{{
 vim.api.nvim_create_user_command("ExecBuild", function(opts) exec(build, opts.args) end, { nargs = "*" })
 vim.api.nvim_create_user_command("ExecTest", function(opts) exec(test, opts.args) end, { nargs = "*" })
 vim.api.nvim_create_user_command("ExecRun", function(opts) exec(run, opts.args) end, { nargs = "*" })
@@ -119,3 +119,4 @@ vim.keymap.set("n", "<leader>pt", "<cmd>PrintTest<cr>", {})
 vim.keymap.set("n", "<leader>pr", "<cmd>PrintRun<cr>", {})
 
 vim.keymap.set("n", "<A-m>", "<cmd>ExecBuild<cr>", {})
+-- }}}

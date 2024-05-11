@@ -1,5 +1,5 @@
-" Function to serve as foldexpr for bash files with many functions
 function! FoldBashFunction(lnum)
+" Function to serve as foldexpr for bash files with many functions
     let line = getline(a:lnum)
     let prevline = getline(a:lnum-1)
     if line =~ '^function'
@@ -88,4 +88,36 @@ function s:Dec2hex(line1, line2, arg) range
   else
     echo printf('%x', a:arg + 0)
   endif
+endfunction
+
+function FoldMarkers(line) abort
+    if a:line[-3:-1] == '{{{'
+        let b:marker_level += 1
+        return 'a1'
+    elseif a:line[-3:-1] == '}}}'
+        let b:marker_level -= 1
+        return 's1'
+    elseif a:line =~? '{{{\d\+$'
+        let b:marker_level = matchstr(a:line, '\d\+$')
+        return b:marker_level
+    else
+        return v:null
+    endif
+endfunction
+
+augroup FoldMakers
+    autocmd!
+    autocmd BufReadPre * let b:marker_level = 0
+augroup END
+
+function FoldText(line, foldstart, foldend, folddashes)
+    let foldcount = a:foldend - a:foldstart
+    let line = a:line->trim()
+    if line[0] == '*'
+        let line = line[1:]
+    endif
+    if line[0:1] == '//'
+        let line = line[2:]
+    endif
+    return printf("%s %3d lines: %s", a:folddashes, foldcount, line->trim())
 endfunction

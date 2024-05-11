@@ -86,7 +86,7 @@ function! s:CmdYank()
     return cmd
 endfunction
 
-" Command mode mapping for emacs/readline bindings
+" Command mode mapping for emacs/readline bindings {{{
 cnoremap <C-F> <Right>
 cnoremap <C-B> <Left>
 cnoremap <C-N> <Down>
@@ -101,7 +101,7 @@ cnoremap <C-u> <C-\>e<SID>CmdBackwardKillLine()<cr>
 cnoremap <M-d> <C-\>e<SID>CmdKillWord()<cr>
 cnoremap <C-k> <C-\>e<SID>CmdKillLine()<cr>
 cnoremap <C-y> <C-\>e<SID>CmdYank()<cr>
-
+" }}}
 
 function! s:InsertKillWord()
     if GetChar() != ""
@@ -123,7 +123,7 @@ function! s:InsertBackwardKillLine()
     call feedkeys("\<C-o>dv0")
 endfunction
 
-" Insert mode mapping for emacs/readline bindings
+" Insert mode mapping for emacs/readline bindings {{{
 inoremap <C-F> <Right>
 inoremap <C-B> <Left>
 inoremap <M-f> <C-o>e<Right>
@@ -137,3 +137,4 @@ inoremap <C-w> <cmd>call <SID>InsertBackwardKillWord()<cr>
 inoremap <C-k> <cmd>call <SID>InsertKillLine()<cr>
 inoremap <C-u> <cmd>call <SID>InsertBackwardKillLine()<cr>
 inoremap <expr> <C-y> pumvisible()?"<C-y>":"<C-R>\""
+" }}}
