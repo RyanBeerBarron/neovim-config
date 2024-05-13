@@ -1,0 +1,129 @@
+[submodule "pack/git-modules/start/vim-surround"]
+	path = pack/git-modules/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/git-modules/start/lightline.vim"]
+	path = pack/git-modules/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/git-modules/start/lualine.nvim"]
+	path = pack/git-modules/start/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim
+[submodule "pack/git-modules/start/darcula"]
+	path = pack/git-modules/start/darcula
+	url = https://github.com/doums/darcula
+[submodule "pack/git-modules/start/kanagawa.nvim"]
+	path = pack/git-modules/start/kanagawa.nvim
+	url = https://github.com/rebelot/kanagawa.nvim
+[submodule "pack/git-modules/start/tokyonight.nvim"]
+	path = pack/git-modules/start/tokyonight.nvim
+	url = https://github.com/folke/tokyonight.nvim
+[submodule "pack/git-modules/start/nvim-jdtls"]
+	path = pack/git-modules/start/nvim-jdtls
+	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "pack/git-modules/start/nvim-lspconfig"]
+	path = pack/git-modules/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/git-modules/start/nvim-treesitter"]
+	path = pack/git-modules/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "pack/git-modules/start/nvim-treesitter-context"]
+	path = pack/git-modules/start/nvim-treesitter-context
+	url = https://github.com/nvim-treesitter/nvim-treesitter-context
+[submodule "pack/git-modules/start/nvim-treesitter-textobjects"]
+	path = pack/git-modules/start/nvim-treesitter-textobjects
+	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[submodule "pack/git-modules/start/gruvbox"]
+	path = pack/git-modules/start/gruvbox
+	url = https://github.com/ellisonleao/gruvbox.nvim
+[submodule "pack/git-modules/start/papercolor"]
+	path = pack/git-modules/start/papercolor
+	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "pack/git-modules/start/tabular"]
+	path = pack/git-modules/start/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "pack/git-modules/start/vim-commentary"]
+	path = pack/git-modules/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "pack/git-modules/start/hydra.nvim"]
+	path = pack/git-modules/start/hydra.nvim
+	url = https://github.com/anuvyklack/hydra.nvim.git
+[submodule "pack/git-modules/start/vim-speeddating"]
+	path = pack/git-modules/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
+[submodule "pack/git-modules/start/marks.nvim"]
+	path = pack/git-modules/start/marks.nvim
+	url = https://github.com/chentoast/marks.nvim.git
+[submodule "pack/git-modules/start/vim-abolish"]
+	path = pack/git-modules/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish/
+[submodule "pack/git-modules/start/trouble.nvim"]
+	path = pack/git-modules/start/trouble.nvim
+	url = https://github.com/folke/trouble.nvim.git
+[submodule "pack/git-modules/start/nvim-web-devicons"]
+	path = pack/git-modules/start/nvim-web-devicons
+	url = https://github.com/nvim-tree/nvim-web-devicons.git
+[submodule "pack/git-modules/start/telescope.nvim"]
+	path = pack/git-modules/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "pack/git-modules/start/plenary.nvim"]
+	path = pack/git-modules/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "pack/git-modules/start/nvim-tabline"]
+	path = pack/git-modules/start/nvim-tabline
+	url = https://github.com/seblj/nvim-tabline
+[submodule "pack/git-modules/start/firenvim.git"]
+	path = pack/git-modules/start/firenvim
+	url = https://github.com/glacambre/firenvim.git
+[submodule "pack/git-modules/start/catppuccin"]
+	path = pack/git-modules/start/catppuccin
+	url = https://github.com/catppuccin/nvim.git
+[submodule "pack/git-modules/start/flexoki"]
+	path = pack/git-modules/start/flexoki
+	url = https://github.com/kepano/flexoki
+[submodule "pack/git-modules/start/github-theme.nvim"]
+	path = pack/git-modules/start/github-theme.nvim
+	url = https://github.com/projekt0n/github-nvim-theme.git
+[submodule "pack/git-modules/start/lush.nvim"]
+	path = pack/git-modules/start/lush.nvim
+	url = https://github.com/rktjmp/lush.nvim
+[submodule "pack/git-modules/start/nordic.nvim"]
+	path = pack/git-modules/start/nordic.nvim
+	url = https://github.com/AlexvZyl/nordic.nvim
+[submodule "pack/git-modules/start/nyoom.nvim"]
+	path = pack/git-modules/start/nyoom.nvim
+	url = https://github.com/nyoom-engineering/nyoom.nvim
+[submodule "pack/git-modules/start/onenord.nvim"]
+	path = pack/git-modules/start/onenord.nvim
+	url = https://github.com/rmehri01/onenord.nvim
+[submodule "pack/git-modules/start/tender.vim"]
+	path = pack/git-modules/start/tender.vim
+	url = https://github.com/jacoborus/tender.vim
+[submodule "pack/git-modules/start/vim-monokai-tasty"]
+	path = pack/git-modules/start/vim-monokai-tasty
+	url = https://github.com/patstockwell/vim-monokai-tasty
+[submodule "pack/git-modules/start/vim-moonfly-colors"]
+	path = pack/git-modules/start/vim-moonfly-colors
+	url = https://github.com/bluz71/vim-moonfly-colors
+[submodule "pack/git-modules/start/zenbones.nvim"]
+	path = pack/git-modules/start/zenbones.nvim
+	url = https://github.com/mcchrish/zenbones.nvim
+[submodule "pack/git-modules/start/nvim-cmp"]
+	path = pack/git-modules/start/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+[submodule "pack/git-modules/start/cmp-cmdline"]
+	path = pack/git-modules/start/cmp-cmdline
+	url = https://github.com/hrsh7th/cmp-cmdline.git
+[submodule "pack/git-modules/start/cmp-nvim-lsp"]
+	path = pack/git-modules/start/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+[submodule "cmp-buffer"]
+	path = pack/git-modules/start/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer.git
+[submodule "pack/git-modules/start/cmp-nvim-lua"]
+	path = pack/git-modules/start/cmp-nvim-lua
+	url = https://github.com/hrsh7th/cmp-nvim-lua.git
+[submodule "pack/git-modules/start/vim-vsnip"]
+	path = pack/git-modules/start/vim-vsnip
+	url = https://github.com/hrsh7th/vim-vsnip.git
+[submodule "pack/git-modules/start/cmp-path"]
+	path = pack/git-modules/start/cmp-path
+	url = https://github.com/hrsh7th/cmp-path.git
