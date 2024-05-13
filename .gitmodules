@@ -1,0 +1,126 @@
+[submodule "vim-surround"]
+	path = pack/tpope/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "lualine.nvim"]
+	path = pack/misc-packages/start/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim
+[submodule "darcula"]
+	path = pack/colorschemes/start/darcula
+	url = https://github.com/doums/darcula
+[submodule "kanagawa.nvim"]
+	path = pack/colorschemes/start/kanagawa.nvim
+	url = https://github.com/rebelot/kanagawa.nvim
+[submodule "tokyonight.nvim"]
+	path = pack/colorschemes/start/tokyonight.nvim
+	url = https://github.com/folke/tokyonight.nvim
+[submodule "nvim-jdtls"]
+	path = pack/lsp/start/nvim-jdtls
+	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "nvim-lspconfig"]
+	path = pack/lsp/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "nvim-treesitter"]
+	path = pack/treesitter/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
+[submodule "nvim-treesitter-context"]
+	path = pack/treesitter/start/nvim-treesitter-context
+	url = https://github.com/nvim-treesitter/nvim-treesitter-context
+[submodule "nvim-treesitter-textobjects"]
+	path = pack/treesitter/start/nvim-treesitter-textobjects
+	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[submodule "gruvbox"]
+	path = pack/colorschemes/start/gruvbox
+	url = https://github.com/ellisonleao/gruvbox.nvim
+[submodule "papercolor"]
+	path = pack/colorschemes/start/papercolor
+	url = https://github.com/NLKNguyen/papercolor-theme
+[submodule "tabular"]
+	path = pack/misc-packages/start/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim-commentary"]
+	path = pack/tpope/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "hydra.nvim"]
+	path = pack/misc-packages/start/hydra.nvim
+	url = https://github.com/anuvyklack/hydra.nvim.git
+[submodule "vim-speeddating"]
+	path = pack/tpope/start/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
+[submodule "marks.nvim"]
+	path = pack/misc-packages/start/marks.nvim
+	url = https://github.com/chentoast/marks.nvim.git
+[submodule "vim-abolish"]
+	path = pack/tpope/start/vim-abolish
+	url = https://github.com/tpope/vim-abolish/
+[submodule "trouble.nvim"]
+	path = pack/misc-packages/start/trouble.nvim
+	url = https://github.com/folke/trouble.nvim.git
+[submodule "nvim-web-devicons"]
+	path = pack/misc-packages/start/nvim-web-devicons
+	url = https://github.com/nvim-tree/nvim-web-devicons.git
+[submodule "telescope.nvim"]
+	path = pack/misc-packages/start/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim
+[submodule "plenary.nvim"]
+	path = pack/misc-packages/start/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim
+[submodule "nvim-tabline"]
+	path = pack/misc-packages/start/nvim-tabline
+	url = https://github.com/seblj/nvim-tabline
+[submodule "firenvim.git"]
+	path = pack/misc-packages/start/firenvim
+	url = https://github.com/glacambre/firenvim.git
+[submodule "catppuccin"]
+	path = pack/colorschemes/start/catppuccin
+	url = https://github.com/catppuccin/nvim.git
+[submodule "flexoki"]
+	path = pack/colorschemes/start/flexoki
+	url = https://github.com/kepano/flexoki
+[submodule "github-theme.nvim"]
+	path = pack/colorschemes/start/github-theme.nvim
+	url = https://github.com/projekt0n/github-nvim-theme.git
+[submodule "lush.nvim"]
+	path = pack/colorschemes/start/lush.nvim
+	url = https://github.com/rktjmp/lush.nvim
+[submodule "nordic.nvim"]
+	path = pack/colorschemes/start/nordic.nvim
+	url = https://github.com/AlexvZyl/nordic.nvim
+[submodule "nyoom.nvim"]
+	path = pack/colorschemes/start/nyoom.nvim
+	url = https://github.com/nyoom-engineering/nyoom.nvim
+[submodule "onenord.nvim"]
+	path = pack/colorschemes/start/onenord.nvim
+	url = https://github.com/rmehri01/onenord.nvim
+[submodule "tender.vim"]
+	path = pack/colorschemes/start/tender.vim
+	url = https://github.com/jacoborus/tender.vim
+[submodule "vim-monokai-tasty"]
+	path = pack/colorschemes/start/vim-monokai-tasty
+	url = https://github.com/patstockwell/vim-monokai-tasty
+[submodule "vim-moonfly-colors"]
+	path = pack/colorschemes/start/vim-moonfly-colors
+	url = https://github.com/bluz71/vim-moonfly-colors
+[submodule "zenbones.nvim"]
+	path = pack/colorschemes/start/zenbones.nvim
+	url = https://github.com/mcchrish/zenbones.nvim
+[submodule "nvim-cmp"]
+	path = pack/cmp/start/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+[submodule "cmp-cmdline"]
+	path = pack/cmp/start/cmp-cmdline
+	url = https://github.com/hrsh7th/cmp-cmdline.git
+[submodule "cmp-nvim-lsp"]
+	path = pack/cmp/start/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+[submodule "cmp-buffer"]
+	path = pack/cmp/start/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer.git
+[submodule "cmp-nvim-lua"]
+	path = pack/cmp/start/cmp-nvim-lua
+	url = https://github.com/hrsh7th/cmp-nvim-lua.git
+[submodule "vim-vsnip"]
+	path = pack/cmp/start/vim-vsnip
+	url = https://github.com/hrsh7th/vim-vsnip.git
+[submodule "cmp-path"]
+	path = pack/cmp/start/cmp-path
+	url = https://github.com/hrsh7th/cmp-path.git
