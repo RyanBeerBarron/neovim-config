@@ -1,9 +1,6 @@
 [submodule "pack/git-modules/start/vim-surround"]
 	path = pack/tpope/start/vim-surround
 	url = https://github.com/tpope/vim-surround
-[submodule "pack/git-modules/start/lightline.vim"]
-	path = pack/git-modules/start/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
 [submodule "pack/git-modules/start/lualine.nvim"]
 	path = pack/misc-packages/start/lualine.nvim
 	url = https://github.com/nvim-lualine/lualine.nvim
