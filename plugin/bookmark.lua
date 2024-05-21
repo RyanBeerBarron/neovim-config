@@ -51,9 +51,11 @@ vim.api.nvim_create_autocmd("VimEnter", {
         for idx = 1, #keys do
             local c = keys:sub(idx, idx)
             local fullpath = vim.g["BOOKMARK_" .. string.upper(c)]
-            local bufnr = vim.fn.bufadd(fullpath)
-            vim.fn.bufload(bufnr)
-            vim.fn.setbufvar(bufnr, "&buflisted", 1)
+            if fullpath ~= nil then
+                local bufnr = vim.fn.bufadd(fullpath)
+                vim.fn.bufload(bufnr)
+                vim.fn.setbufvar(bufnr, "&buflisted", 1)
+            end
         end
     end
 })
