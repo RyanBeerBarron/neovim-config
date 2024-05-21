@@ -42,7 +42,7 @@ endfunction
 function s:setTest()
     let line = getline('.')
     let matches = matchlist(line, 'public void \(\w\+\)()')
-    if matches[1] != ''
+    if len(matches) > 0
         let s:test = matches[1]
     else
         let s:test = expand("%:t:r")
