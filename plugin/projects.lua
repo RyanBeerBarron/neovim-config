@@ -13,12 +13,12 @@ local shada = config_home .. "/project.shada"
 local nvimrc = config_home .. "/nvimrc"
 local vimscript = config_home .. "/script.vim"
 local luascript = config_home .. "/script.lua"
-if vim.fn.finddir(config_home, result[1]) == '' then
-    vim.fn.mkdir(config_home, "p")
-    vim.cmd('mkvimrc ' .. nvimrc)
-    vim.fn.writefile({}, vimscript)
-    vim.fn.writefile({}, luascript)
-end
+
+if vim.fn.isdirectory(config_home) == 0 then vim.fn.mkdir(config_home, "p") end
+if vim.fn.filereadable(nvimrc) == 0 then vim.cmd('mkvimrc ' .. nvimrc) end
+if vim.fn.filereadable(vimscript) == 0 then vim.fn.writefile({}, vimscript) end
+if vim.fn.filereadable(luascript) == 0 then vim.fn.writefile({}, luascript) end
+
 vim.o.shada = "!,'100,<50,s10,h"
 vim.o.shadafile = shada
 
