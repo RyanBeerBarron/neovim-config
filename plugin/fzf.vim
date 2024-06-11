@@ -4,10 +4,9 @@ nnoremap <C-j>q <Cmd>call <SID>fzf_vim_qf()<cr>
 
 function s:fzf_git_files()
     let files = systemlist("git ls-files-root | fzf-popup-pipe --keep-right")
-    let projectPath = systemlist("projects")[1]
     let length = len(files)
     if length == 1
-        execute "edit ".projectPath."/".files[0]
+        execute "edit ".files[0]
     elseif length > 1
         let qflist = map(files, {key, val -> {"filename": val}})
         call setqflist(qflist)
