@@ -18,6 +18,7 @@ local function new_cmd(cmd_name)
     }
 end
 
+-- TODO: Create enums of build/test/run with name, cmd_key and errorformat_key
 ---@type cmd
 local build = new_cmd("Build")
 
@@ -106,6 +107,9 @@ local function close_wins()
 end
 vim.keymap.set("n", "<leader>cl", close_wins)
 
+-- TODO: Make it possible to run any command rapidly
+-- Press Alt-m and prompt on which command to run and execute with autofill to previous command ran
+-- but can easily type another command instead (compile vs clean compile vs test-compile, etc...)
 vim.api.nvim_create_user_command("ExecBuild", function(opts) exec(build, opts.args) end, { nargs = "*" })
 vim.api.nvim_create_user_command("ExecTest", function(opts) exec(test, opts.args) end, { nargs = "*" })
 vim.api.nvim_create_user_command("ExecRun", function(opts) exec(run, opts.args) end, { nargs = "*" })
