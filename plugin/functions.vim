@@ -64,9 +64,9 @@ function s:matchPattern(qf_key, qf_val, pattern)
     let qf_text = a:qf_val.text
     let qf_filename = bufname(a:qf_val.bufnr)
     if a:pattern[0] == '!'
-        return qf_text !~ a:pattern[1:] && qf_filename !~ a:pattern[1:]
+        return qf_text !~# a:pattern[1:] && qf_filename !~# a:pattern[1:]
     else
-        return qf_text =~ a:pattern || qf_filename =~ a:pattern
+        return qf_text =~# a:pattern || qf_filename =~# a:pattern
     endif
 endfunction
 
