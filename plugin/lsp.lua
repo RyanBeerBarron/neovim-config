@@ -7,9 +7,22 @@ local lspconfig = require("lspconfig")
 vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('UserLspConfig', {}),
   callback = function(ev)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
     -- Enable completion triggered by <c-x><c-o>
     vim.bo[ev.buf].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
+    vim.api.nvim_create_autocmd({'CursorHold', 'CursorHoldI'}, {
+        buffer = 0,
+        callback = function(ev)
+            vim.lsp.buf.document_highlight()
+        end
+    })
+    vim.api.nvim_create_autocmd('CursorMoved', {
+        buffer = 0,
+        callback = function(ev)
+            vim.lsp.buf.clear_references()
+        end
+    })
     -- Buffer local mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     local opts = { buffer = ev.buf }
@@ -20,8 +33,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
     vim.keymap.set('n', '<space>H', vim.lsp.buf.signature_help, opts)
+    vim.keymap.set('n', '<space>ic', vim.lsp.buf.incoming_calls, opts)
+    vim.keymap.set('n', '<space>oc', vim.lsp.buf.outgoing_calls, opts)
     vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
     vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
+    vim.keymap.set('n', '<space>ws', vim.lsp.buf.workspace_symbol, opts)
+    vim.keymap.set('n', '<space>ds', vim.lsp.buf.workspace_symbol, opts)
     vim.keymap.set('n', '<space>wl', function()
       print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, opts)
@@ -80,3 +97,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     vim.lsp.buf.format({async = false})
   end
 })
+
+vim.lsp.inlay_hint.enable(true)
+vim.api.nvim_create_user_command("InlayHintsToggle", function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end, {})
