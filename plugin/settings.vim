@@ -12,6 +12,7 @@ set foldexpr=FoldParagraphs(v\:lnum)
 set foldlevel=2
 set foldmethod=expr
 set grepprg=git\ grep\ --line-number
+set grepformat=%f:%l:%m
 set guifont=CaskaydiaCove\ Nerd\ Font:h16
 "set guifont=IosevkaTerm\ Nerd\ Font:h16
 set ignorecase
