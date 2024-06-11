@@ -7,7 +7,6 @@ function s:editConfig()
         execute 'tabnew' stdpath('config')
         execute 'tcd' stdpath('config')
         let s:configWinId = win_getid()
-        setlocal wildignore+=*/pack/*
     endif
 endfunction
 nnoremap <leader>cf <cmd>Config<cr>
