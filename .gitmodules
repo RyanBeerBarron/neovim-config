@@ -121,3 +121,6 @@
 [submodule "cmp-path"]
 	path = pack/cmp/start/cmp-path
 	url = https://github.com/hrsh7th/cmp-path.git
+[submodule "pack/lsp/start/spring-boot.nvim"]
+	path = pack/lsp/start/spring-boot.nvim
+	url = https://github.com/JavaHello/spring-boot.nvim

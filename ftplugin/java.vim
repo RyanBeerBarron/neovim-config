@@ -14,6 +14,7 @@ setlocal colorcolumn=100
 setlocal foldmethod=expr
 setlocal foldexpr=s:foldJava(v\:lnum)
 setlocal foldlevel=2
+setlocal nolist
 
 function s:foldJava(lnum)
     let line = getline(a:lnum)
@@ -49,3 +50,4 @@ function s:setTest()
     endif
     return s:test
 endfunction
+autocmd InsertLeave,BufEnter <buffer> lua vim.lsp.codelens.refresh({ bufnr = 0 })
