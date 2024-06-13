@@ -1,3 +1,6 @@
+if vim.fn.exists('NO_WORKSPACE') == 1 then
+    return
+end
 local result = vim.fn.systemlist("workspace")
 if vim.v.shell_error ~= 0 then return end
 local config_home = result[1] .. "/nvim"

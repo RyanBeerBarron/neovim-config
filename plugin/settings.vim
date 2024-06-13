@@ -53,3 +53,4 @@ autocmd BufReadPost *.bak execute "doautocmd BufReadPost " .. expand("<afile>:r"
 let g:loaded_matchit = 1
 
 " vim: foldlevel=0
+colorscheme kanagawa
