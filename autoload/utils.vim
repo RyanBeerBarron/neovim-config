@@ -1,3 +1,3 @@
-function utils#startsWith(longer, shorter) abort
-    return a:longer[0:len(a:shorter)-1] ==? a:shorter
+function utils#is_prefix(string, prefix) abort
+    return a:string[0:len(a:prefix)-1] ==? a:prefix
 endfunction

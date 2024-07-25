@@ -24,14 +24,14 @@ function s:comp_setErrorFormat(arglead, cmdline, cursorpos)
         return s:global_vars
     endif
     if len(list_cmdline) == 2 && a:arglead != ''
-        return filter(copy(s:global_vars), {idx, string -> utils#startsWith(string, a:arglead)})
+        return filter(copy(s:global_vars), {idx, string -> utils#is_prefix(string, a:arglead)})
     endif
     let keys = keys(s:errorformats)
     if len(list_cmdline) == 2 && a:arglead == ''
         return keys
     endif
     if len(list_cmdline) == 3 && a:arglead != ''
-        return filter(keys, {idx, string -> utils#startsWith(string, a:arglead)})
+        return filter(keys, {idx, string -> utils#is_prefix(string, a:arglead)})
     endif
     return []
 endfunction
