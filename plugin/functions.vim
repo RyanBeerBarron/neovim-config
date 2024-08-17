@@ -14,6 +14,20 @@ function! FoldBashFunction(lnum)
     return '='
 endfunction
 
+function s:internal_recursive_fold_text(prefix, foldstart) abort
+    let line = getline(a:foldstart)
+    if utils#is_prefix(line, a:prefix)
+        return s:internal_recursive_fold_text(a:prefix, a:foldstart+1)
+    endif
+    let count = v:foldend - v:foldstart
+    return '+-' .. v:folddashes .. ' ' .. count .. ' lines: ' .. line
+endfunction
+
+function! RecursiveFoldText(prefix_to_ignore) abort
+    return s:internal_recursive_fold_text(a:prefix_to_ignore, v:foldstart)
+endfunction
+
+
 function RunInTerm(arg = "")
     let cmd = a:arg
     if empty(cmd)
