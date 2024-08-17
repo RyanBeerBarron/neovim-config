@@ -7,9 +7,6 @@ function s:className()
     return expand("%:t:r")
 endfunction
 
-setlocal wildignore+=*.class
-setlocal wildignore+=*/target/*
-
 setlocal colorcolumn=100
 setlocal foldmethod=expr
 setlocal foldexpr=s:foldJava(v\:lnum)
@@ -28,12 +25,6 @@ nnoremap <buffer> <A-m> <cmd>ExecBuild<cr>
 nnoremap <buffer> <A-S-t> <cmd>execute "ExecTest " . <SID>setTest()<cr>
 nnoremap <buffer> <A-t> <cmd>execute "ExecTest " . <SID>getTest()<cr>
 
-nnoremap <buffer> <A-o> <Cmd>lua require('jdtls').organize_imports()<CR>
-nnoremap <buffer> crv <Cmd>lua require('jdtls').extract_variable()<CR>
-vnoremap <buffer> crv <Cmd>lua require('jdtls').extract_variable(true)<CR>
-nnoremap <buffer> crc <Cmd>lua require('jdtls').extract_constant()<CR>
-vnoremap <buffer> crc <Cmd>lua require('jdtls').extract_constant(true)<CR>
-vnoremap <buffer> crm <Cmd>lua require('jdtls').extract_method(true)<CR>
 
 let s:test=""
 function s:getTest()
@@ -50,4 +41,3 @@ function s:setTest()
     endif
     return s:test
 endfunction
-autocmd InsertLeave,BufEnter <buffer> lua vim.lsp.codelens.refresh({ bufnr = 0 })
