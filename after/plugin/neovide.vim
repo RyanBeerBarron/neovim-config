@@ -29,7 +29,7 @@ if exists("g:neovide")
   command Transparency call <SID>transparency()
 
   function s:transparency()
-    echo "Press '+', '-' to increase/decrease the opacity respectively, or 'q' to quit"
+    echomsg "Press '+', '-' to increase/decrease the opacity respectively, or 'q' to quit"
     let char = ''
     while char != 'q'
       let input = getchar()
@@ -40,7 +40,7 @@ if exists("g:neovide")
 	let g:neovide_transparency = g:neovide_transparency - 0.05
       endif
     endwhile
-    echo "New transparency value is at: " .. printf("%f", g:neovide_transparency)
+    echomsg "New transparency value is at: " .. printf("%f", g:neovide_transparency)
   endfunction
 
   function s:changeScale(delta)

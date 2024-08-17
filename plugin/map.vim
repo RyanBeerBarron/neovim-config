@@ -25,7 +25,11 @@ nnoremap <leader>y "+y
 nnoremap <leader>Y "+Y
 nnoremap <leader>D "+D
 nnoremap <leader>dd "+dd
-nnoremap <leader>e <Cmd>Explore<CR><CR>
+nnoremap <leader>e <Cmd>Explore<CR>
+if empty(maparg('\ws', 'n'))
+    echomsg "does not have mapping to workspace"
+    nnoremap <leader>ws <cmd>edit $XDG_DATA_HOME/workspace<cr>
+endif
 
 " Normal mode mappings for tab, to mimic Ctrl-w mapping for windows
 nnoremap <C-t>n <cmd>tabnew<cr>

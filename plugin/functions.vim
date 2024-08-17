@@ -1,12 +1,15 @@
 " Function to serve as foldexpr for bash files with many functions
 function! FoldBashFunction(lnum)
     let line = getline(a:lnum)
-    let prevline = getline(a:lnum-1)
-    if line =~ '^function'
+    if line[:7] == 'function'
        return 1
     endif
-    if prevline =~ '^}'
-        return 0
+    if line[:0] == '}'
+        return 's1'
+    endif
+    if line[:0] == '#'
+        let result = FoldBashFunction(a:lnum+1)
+        return result
     endif
     return '='
 endfunction
