@@ -2,6 +2,19 @@ local lspconfig = require("lspconfig")
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 
+
+local function deactivate_semantic_tokens()
+    for _, client in ipairs(vim.lsp.get_clients()) do
+        vim.lsp.semantic_tokens.stop(vim.fn.bufnr(), client.id)
+    end
+end
+local function activate_semantic_tokens()
+    for _, client in ipairs(vim.lsp.get_clients()) do
+        vim.lsp.semantic_tokens.start(vim.fn.bufnr(), client.id)
+    end
+end
+vim.api.nvim_create_user_command('LspHighlightingStop', deactivate_semantic_tokens, {})
+vim.api.nvim_create_user_command('LspHighlightingStart', activate_semantic_tokens, {})
 -- Use LspAttach autocommand to only map the following keys
 -- after the language server attaches to the current buffer
 vim.api.nvim_create_autocmd('LspAttach', {
