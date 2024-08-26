@@ -92,3 +92,17 @@ function s:Dec2hex(line1, line2, arg) range
     echo printf('%x', a:arg + 0)
   endif
 endfunction
+
+command! -nargs=? -range Hex2Dec call s:Hex2Dec(<line1>, <line2>, '<args>')
+function s:Hex2Dec(line1, line2, arg) range
+    if empty(a:arg)
+        let cmd = 's/\<0x\x\+\>/\=printf("%d", submatch(0)+0)/g'
+       try
+           execute a:line1 . ',' . a:line2 . cmd
+        catch
+          echo 'Error: No decimal number found'
+        endtry
+    else
+        echo printf('%d', a:arg + 0)
+    endif
+endfunction
