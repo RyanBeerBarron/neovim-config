@@ -3,6 +3,7 @@ set autowrite
 set backupext=.bak
 set cmdheight=0
 set cmdwinheight=12
+set completeopt=menu,menuone,popup
 set concealcursor=
 set conceallevel=0
 set expandtab
@@ -11,11 +12,12 @@ set foldcolumn=0
 set foldexpr=FoldParagraphs(v\:lnum)
 set foldlevel=2
 set foldmethod=expr
-set grepprg=git\ grep\ --line-number
-set grepformat=%f:%l:%m
+set grepformat=%f:%l:%c:%m
+set grepprg=git\ grep\ --line-number\ --column
 set guifont=CaskaydiaCove\ Nerd\ Font:h16
 "set guifont=IosevkaTerm\ Nerd\ Font:h16
 set ignorecase
+set inccommand=split
 set incsearch
 set linebreak
 set list
@@ -29,6 +31,7 @@ set noruler
 set noshowmode
 set nowrap
 set path=,,**
+set pumheight=10
 set scrolloff=8
 set shiftwidth=4
 set showmatch
@@ -40,17 +43,17 @@ set spell
 set spelllang=en,fr
 set tabstop=4
 set tildeop
+set undofile
 set wildoptions=fuzzy,pum,tagfile
 
 "netrw settings
+let g:netrw_altfile=1
 let g:netrw_banner=0
 let g:netrw_liststyle=0
+let g:netrw_keepj = 'keepj'
 
 autocmd FileType lua,bash,sh,c,vim,json,go setlocal foldexpr=nvim_treesitter#foldexpr()
 autocmd BufReadPost *.bak execute "doautocmd BufReadPost " .. expand("<afile>:r")
-
-" Global variables
-let g:loaded_matchit = 1
 
 " vim: foldlevel=0
 colorscheme kanagawa

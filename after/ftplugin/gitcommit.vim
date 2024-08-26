@@ -1,2 +1,2 @@
-set formatoptions-=t
-set formatoptions-=l
+setlocal formatoptions-=t
+setlocal formatoptions-=l
