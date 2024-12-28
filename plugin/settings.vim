@@ -52,7 +52,7 @@ let g:netrw_banner=0
 let g:netrw_liststyle=0
 let g:netrw_keepj = 'keepj'
 
-autocmd FileType lua,bash,sh,c,vim,json,go setlocal foldexpr=nvim_treesitter#foldexpr()
+autocmd FileType lua,bash,sh,c,vim,json,go,javascript setlocal foldexpr=nvim_treesitter#foldexpr()
 autocmd BufReadPost *.bak execute "doautocmd BufReadPost " .. expand("<afile>:r")
 
 " vim: foldlevel=0
