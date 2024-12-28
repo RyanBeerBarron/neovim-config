@@ -15,7 +15,7 @@ function config#grep(args) abort
     let wildignore_save = &wildignore
     defer s:restore_wildignore(wildignore_save)
 
-    let search_paths = g:config_path->map({_, path -> path .. '/*'})->join(' ')
+    let search_paths = g:config_path->mapnew({_, path -> path .. '/**'})->join(' ')
     let &wildignore = '*/pack/*'
     execute 'vimgrep /\C' .. a:args .. '/ ' .. search_paths
 endfunction
