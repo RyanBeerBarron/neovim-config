@@ -20,12 +20,12 @@ set ignorecase
 set inccommand=split
 set incsearch
 set linebreak
-set list
 set listchars=tab:󰌒\ \ ,eol:↲,trail:.,extends:<,precedes:>,nbsp:␣
 set matchtime=1
 set modelineexpr
 set nocursorcolumn
 set nocursorline
+set nolist
 set nonumber
 set noruler
 set noshowmode

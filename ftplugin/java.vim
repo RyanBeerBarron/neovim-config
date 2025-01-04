@@ -1,6 +1,3 @@
-inoremap <buffer> sout System.out.println
-inoreabbrev <buffer> main public static void main(String[] args) {<cr>}<ESC>kA
-
 inoremap <buffer> <C-x><C-n> <C-r>=<SID>className()<cr>
 
 function s:className()

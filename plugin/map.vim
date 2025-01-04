@@ -1,5 +1,6 @@
 " Normal mode mappings
 nnoremap q: <nop>
+nnoremap <C-b> <nop>
 nnoremap <S-j> j
 nnoremap <M-,> <cmd>pop<cr>
 nnoremap <M-.> <cmd>tag<cr>
@@ -32,16 +33,12 @@ nnoremap <leader>D "+D
 nnoremap <leader>dd "+dd
 nnoremap <leader>e <Cmd>Explore<CR>
 if empty(maparg('\ws', 'n'))
-    echomsg "does not have mapping to workspace"
     nnoremap <leader>ws <cmd>edit $XDG_DATA_HOME/workspace<cr>
 endif
 
 " Normal mode mappings for tab, to mimic Ctrl-w mapping for windows
 nnoremap <C-t>n <cmd>tabnew<cr>
 nnoremap <C-t>c <cmd>tabclose<cr>
-
-" Normal mode mappings starting with ','
-nnoremap ,bd <cmd>bdel<cr>
 
 " Insert mode mapping
 inoremap {<cr> {<cr>}<ESC>O
