@@ -18,12 +18,16 @@ function s:foldJava(lnum)
     if line =~ '^import'
         return 3
     endif
-    return nvim_treesitter#foldexpr()
+    return v:lua.vim.treesitter.foldexpr()
 endfunction
 
 nnoremap <buffer> <A-m> <cmd>ExecBuild<cr>
 nnoremap <buffer> <A-S-t> <cmd>execute "ExecTest " . <SID>setTest()<cr>
 nnoremap <buffer> <A-t> <cmd>execute "ExecTest " . <SID>getTest()<cr>
+nnoremap <buffer> [[  [m
+nnoremap <buffer> []  [M
+nnoremap <buffer> ][  ]m
+nnoremap <buffer> ]]  ]M
 
 
 let s:test=""

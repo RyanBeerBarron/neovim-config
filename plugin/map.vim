@@ -1,14 +1,19 @@
 " Normal mode mappings
-nnoremap [[  ?{<CR>w99[{
-nnoremap ]]  j0[[%/{<CR>
-nnoremap ][  /}<CR>b99]}
-nnoremap []  k$][%?}<CR>
 nnoremap q: <nop>
 nnoremap <S-j> j
 nnoremap <M-,> <cmd>pop<cr>
 nnoremap <M-.> <cmd>tag<cr>
 nnoremap <C-x><C-x> <cmd>call RunInTerm()<cr>
 nnoremap <space>rn :<cmd>call <SID>rename()<cr>
+
+" I want all the brackets keymap to follow these rules:
+" * The 1st bracket correspond to the direction,
+"   ']' next or below in the file and '[' previous or above in the file
+" * The 2nd bracket correspond to which curly bracket is looked for
+"   ']' -> '}'      '[' -> '{'
+" Swapping the following to get desired outcome
+nnoremap ]] ][
+nnoremap ][ ]]
 
 function s:rename()
     let word = expand("<cword>")
