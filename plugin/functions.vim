@@ -14,6 +14,22 @@ function! FoldBashFunction(lnum)
     return '='
 endfunction
 
+function FoldCFunction(lnum)
+    let line = getline(a:lnum)
+    let nextline = getline(a:lnum + 1)
+    if nextline[0] == '{'
+        return 1
+    endif
+    if line[0] == '}'
+        return 's1'
+    endif
+    if line[:1] == "//"
+        let result = FoldCFunction(a:lnum+1)
+        return result
+    endif
+    return '='
+endfunction
+
 function s:internal_recursive_fold_text(prefix, foldstart) abort
     let line = getline(a:foldstart)
     if utils#is_prefix(line, a:prefix)
