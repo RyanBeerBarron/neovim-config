@@ -19,12 +19,6 @@
 [submodule "nvim-treesitter"]
 	path = pack/treesitter/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
-[submodule "nvim-treesitter-context"]
-	path = pack/treesitter/start/nvim-treesitter-context
-	url = https://github.com/nvim-treesitter/nvim-treesitter-context
-[submodule "nvim-treesitter-textobjects"]
-	path = pack/treesitter/start/nvim-treesitter-textobjects
-	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 [submodule "gruvbox"]
 	path = pack/colorschemes/start/gruvbox
 	url = https://github.com/ellisonleao/gruvbox.nvim
