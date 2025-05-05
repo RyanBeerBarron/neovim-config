@@ -1,7 +1,7 @@
 "basic settings
 set autowrite
 set backupext=.bak
-set cmdheight=0
+set cmdheight=1
 set cmdwinheight=12
 set completeopt=menu,menuone,popup
 set concealcursor=
@@ -27,14 +27,14 @@ set nocursorcolumn
 set nocursorline
 set nolist
 set nonumber
-set noruler
-set noshowmode
 set nowrap
 set path=,,**
 set pumheight=10
+set ruler
 set scrolloff=8
 set shiftwidth=4
 set showmatch
+set showmode
 set signcolumn=no
 set smartcase
 set smartindent

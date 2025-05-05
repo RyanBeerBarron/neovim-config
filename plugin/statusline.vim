@@ -25,6 +25,3 @@ function FormatFont()
         return system("fonts")[:-2]
     endif
 endfunction
-
-" set statusline=\ %{FormatMode()}\ --\ %t%=%{FormatColorscheme()}\ --\ %{FormatFont()}\
-let &statusline=' %{FormatMode()} -- %t %m%=%{FormatColorscheme()} ' " -- %{FormatFont()} '
