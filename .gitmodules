@@ -129,4 +129,4 @@
 	url = https://github.com/onsails/lspkind.nvim
 [submodule "cmp-nvim-lsp-signature-help"]
 	path = pack/cmp/start/cmp-nvim-lsp-signature-help
-	url = git@github.com:hrsh7th/cmp-nvim-lsp-signature-help.git
+	url = https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git
