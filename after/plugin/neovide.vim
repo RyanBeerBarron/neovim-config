@@ -1,5 +1,5 @@
 if exists("g:neovide")
-  let g:neovide_transparency = 0.85
+  let g:neovide_opacity = 0.85
   let g:neovide_scroll_animation_length = 0.35
   let g:neovide_scroll_animation_far_lines = 1
   let g:neovide_hide_mouse_when_typing = v:true
@@ -10,7 +10,7 @@ if exists("g:neovide")
 
   " Cursor settings
   let g:neovide_cursor_animation_length = 0.2
-  let g:neovide_cursor_trail_size = 0.6
+  let g:neovide_cursor_trail_size = 0.4
   let g:neovide_cursor_antialiasing = v:true
   let g:neovide_cursor_unfocused_outline_width = 0.05
 
@@ -18,10 +18,10 @@ if exists("g:neovide")
   let g:neovide_cursor_vfx_mode = "railgun"
   let g:neovide_cursor_vfx_opacity = 200.0
   let g:neovide_cursor_vfx_particle_curl = 1.0
-  let g:neovide_cursor_vfx_particle_density = 7.0
-  let g:neovide_cursor_vfx_particle_lifetime = 2.2
-  let g:neovide_cursor_vfx_particle_phase = 3.5
-  let g:neovide_cursor_vfx_particle_speed = 10.0
+  let g:neovide_cursor_vfx_particle_density = 0.4
+  let g:neovide_cursor_vfx_particle_lifetime = 1
+  let g:neovide_cursor_vfx_particle_phase = 2
+  let g:neovide_cursor_vfx_particle_speed = 5
 
   " toggle profiler
   nnoremap <space>pf <cmd>let g:neovide_profiler = g:neovide_profiler == v:true ? v:false : v:true<cr>
