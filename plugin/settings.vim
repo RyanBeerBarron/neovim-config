@@ -43,6 +43,7 @@ set spell
 set spelllang=en,fr
 set tabstop=4
 set tildeop
+set title
 set undofile
 set wildoptions=fuzzy,pum,tagfile
 
