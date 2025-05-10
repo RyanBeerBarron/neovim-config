@@ -1,120 +1,160 @@
 [submodule "vim-surround"]
 	path = pack/tpope/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+    shallow = true
 [submodule "lualine.nvim"]
 	path = pack/misc-packages/start/lualine.nvim
 	url = https://github.com/nvim-lualine/lualine.nvim
+    shallow = true
 [submodule "darcula"]
 	path = pack/colorschemes/start/darcula
 	url = https://github.com/doums/darcula
+    shallow = true
 [submodule "kanagawa.nvim"]
 	path = pack/colorschemes/start/kanagawa.nvim
 	url = https://github.com/rebelot/kanagawa.nvim
+    shallow = true
 [submodule "tokyonight.nvim"]
 	path = pack/colorschemes/start/tokyonight.nvim
 	url = https://github.com/folke/tokyonight.nvim
+    shallow = true
 [submodule "nvim-lspconfig"]
 	path = pack/lsp/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+    shallow = true
 [submodule "nvim-treesitter"]
 	path = pack/treesitter/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter
+    shallow = true
 [submodule "gruvbox"]
 	path = pack/colorschemes/start/gruvbox
 	url = https://github.com/ellisonleao/gruvbox.nvim
+    shallow = true
 [submodule "papercolor"]
 	path = pack/colorschemes/start/papercolor
 	url = https://github.com/NLKNguyen/papercolor-theme
+    shallow = true
 [submodule "tabular"]
 	path = pack/misc-packages/start/tabular
 	url = https://github.com/godlygeek/tabular.git
+    shallow = true
 [submodule "hydra.nvim"]
 	path = pack/misc-packages/start/hydra.nvim
 	url = https://github.com/anuvyklack/hydra.nvim.git
+    shallow = true
 [submodule "vim-speeddating"]
 	path = pack/tpope/start/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
+    shallow = true
 [submodule "marks.nvim"]
 	path = pack/misc-packages/start/marks.nvim
 	url = https://github.com/chentoast/marks.nvim.git
+    shallow = true
 [submodule "vim-abolish"]
 	path = pack/tpope/start/vim-abolish
 	url = https://github.com/tpope/vim-abolish/
+    shallow = true
 [submodule "trouble.nvim"]
 	path = pack/misc-packages/start/trouble.nvim
 	url = https://github.com/folke/trouble.nvim.git
+    shallow = true
 [submodule "nvim-web-devicons"]
 	path = pack/misc-packages/start/nvim-web-devicons
 	url = https://github.com/nvim-tree/nvim-web-devicons.git
+    shallow = true
 [submodule "telescope.nvim"]
 	path = pack/misc-packages/start/telescope.nvim
 	url = https://github.com/nvim-telescope/telescope.nvim
+    shallow = true
 [submodule "plenary.nvim"]
 	path = pack/misc-packages/start/plenary.nvim
 	url = https://github.com/nvim-lua/plenary.nvim
+    shallow = true
 [submodule "nvim-tabline"]
 	path = pack/misc-packages/start/nvim-tabline
 	url = https://github.com/seblj/nvim-tabline
+    shallow = true
 [submodule "firenvim.git"]
 	path = pack/misc-packages/start/firenvim
 	url = https://github.com/glacambre/firenvim.git
+    shallow = true
 [submodule "catppuccin"]
 	path = pack/colorschemes/start/catppuccin
 	url = https://github.com/catppuccin/nvim.git
+    shallow = true
 [submodule "flexoki"]
 	path = pack/colorschemes/start/flexoki
 	url = https://github.com/kepano/flexoki
+    shallow = true
 [submodule "github-theme.nvim"]
 	path = pack/colorschemes/start/github-theme.nvim
 	url = https://github.com/projekt0n/github-nvim-theme.git
+    shallow = true
 [submodule "lush.nvim"]
 	path = pack/colorschemes/start/lush.nvim
 	url = https://github.com/rktjmp/lush.nvim
+    shallow = true
 [submodule "nordic.nvim"]
 	path = pack/colorschemes/start/nordic.nvim
 	url = https://github.com/AlexvZyl/nordic.nvim
+    shallow = true
 [submodule "nyoom.nvim"]
 	path = pack/colorschemes/start/nyoom.nvim
 	url = https://github.com/nyoom-engineering/nyoom.nvim
+    shallow = true
 [submodule "onenord.nvim"]
 	path = pack/colorschemes/start/onenord.nvim
 	url = https://github.com/rmehri01/onenord.nvim
+    shallow = true
 [submodule "tender.vim"]
 	path = pack/colorschemes/start/tender.vim
 	url = https://github.com/jacoborus/tender.vim
+    shallow = true
 [submodule "vim-monokai-tasty"]
 	path = pack/colorschemes/start/vim-monokai-tasty
 	url = https://github.com/patstockwell/vim-monokai-tasty
+    shallow = true
 [submodule "vim-moonfly-colors"]
 	path = pack/colorschemes/start/vim-moonfly-colors
 	url = https://github.com/bluz71/vim-moonfly-colors
+    shallow = true
 [submodule "zenbones.nvim"]
 	path = pack/colorschemes/start/zenbones.nvim
 	url = https://github.com/mcchrish/zenbones.nvim
+    shallow = true
 [submodule "nvim-cmp"]
 	path = pack/cmp/start/nvim-cmp
 	url = https://github.com/hrsh7th/nvim-cmp.git
+    shallow = true
 [submodule "cmp-cmdline"]
 	path = pack/cmp/start/cmp-cmdline
 	url = https://github.com/hrsh7th/cmp-cmdline.git
+    shallow = true
 [submodule "cmp-nvim-lsp"]
 	path = pack/cmp/start/cmp-nvim-lsp
 	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+    shallow = true
 [submodule "cmp-buffer"]
 	path = pack/cmp/start/cmp-buffer
 	url = https://github.com/hrsh7th/cmp-buffer.git
+    shallow = true
 [submodule "cmp-nvim-lua"]
 	path = pack/cmp/start/cmp-nvim-lua
 	url = https://github.com/hrsh7th/cmp-nvim-lua.git
+    shallow = true
 [submodule "vim-vsnip"]
 	path = pack/cmp/start/vim-vsnip
 	url = https://github.com/hrsh7th/vim-vsnip.git
+    shallow = true
 [submodule "cmp-path"]
 	path = pack/cmp/start/cmp-path
 	url = https://github.com/hrsh7th/cmp-path.git
+    shallow = true
 [submodule "lspkind"]
 	path = pack/misc-packages/start/lspkind
 	url = https://github.com/onsails/lspkind.nvim
+    shallow = true
 [submodule "cmp-nvim-lsp-signature-help"]
 	path = pack/cmp/start/cmp-nvim-lsp-signature-help
 	url = https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git
+    shallow = true
